@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 html {
     overflow-y: hidden;
     overflow-x: hidden;
@@ -48,7 +49,7 @@ body {
 .main {
     width: 100vw;
     height: 100vh;
-    margin: 0;
+    margin: 0 auto;
 }
 
 .background__two {
@@ -79,11 +80,11 @@ body {
 }
 
 .iphone {
-    width: 430px;
+    display: flex;
+    justify-content: center;
 }
 
 .iphone__image {
     position: fixed;
     bottom: 0;
-    left: 41%;
 }

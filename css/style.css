@@ -20,18 +20,21 @@ body {
     display: flex;
     justify-content: space-between;
     margin: 45px 200px 115px 200px;
+    transition: all 1s;
 }
 
 .header__leftside, .header__rightside {
     display: flex;
     align-items: center;
+    transition: all .4s;
 }
 
 .header__title {
     color: #504A62;
-    font-size: 70px;
+    font-size: 60px;
     font-weight: 700;
     padding-left: 20px;
+    transition: all .8s;
 }
 
 .nav__item {
@@ -39,6 +42,7 @@ body {
     font-weight: 700;
     color: #504A62;
     text-decoration: none;
+    transition: all .5s;
 }
 
 
@@ -50,16 +54,18 @@ body {
     width: 100vw;
     height: 100vh;
     margin: 0 auto;
+    transition: all .4s;
 }
 
 .background__two {
     background: url(/image/leftside.svg) no-repeat left bottom 100%, url(/image/rightside.svg) no-repeat right bottom 100%;
+    transition: all .8s;
 }
 
 .main__block {
     width: 900px;
     margin: 0 auto 56px auto;
-    
+    transition: all .9s;
 }
 
 .main__title {
@@ -68,6 +74,7 @@ body {
     line-height: 1.5;
     text-align: center;
     color: #504A62;
+    transition: all .2s;
 }
 
 .cards {
@@ -77,14 +84,160 @@ body {
     justify-content: center;
     align-items: center;
     gap: 35px;
+    transition: all .4s;
 }
 
 .iphone {
     display: flex;
     justify-content: center;
+    transition: all .3s;
 }
 
 .iphone__image {
     position: fixed;
     bottom: 0;
+    transition: all .5s;
+}
+
+
+
+@media (max-width: 1360px) {
+    .header {
+        margin: 45px 100px 115px 100px;
+    }
+
+    .header__title {
+        color: #504A62;
+        font-size: 40px;
+        font-weight: 700;
+        padding-left: 10px;
+    }
+    
+    .nav__item {
+        font-size: 18px;
+        font-weight: 700;
+        color: #504A62;
+        text-decoration: none;
+    }
+
+    .background__two {
+        background: url(/image/leftside.svg) no-repeat cover, url(/image/rightside.svg) no-repeat cover;
+    }
+
+    .main__block {
+        width: 700px;
+        margin: 0 auto 40px auto;
+    }
+
+    .main__title {
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 1.2;
+        text-align: center;
+        color: #504A62;
+    }
+}
+
+@media (max-width: 1170px) {
+    .header {
+        margin: 45px 80px 115px 80px;
+    }
+
+    .header__title {
+        color: #504A62;
+        font-size: 30px;
+        font-weight: 700;
+        padding-left: 10px;
+    }
+    
+    .nav__item {
+        font-size: 16px;
+        font-weight: 700;
+        color: #504A62;
+        text-decoration: none;
+    }
+
+    .background__two {
+        background: url(/image/leftside.svg) no-repeat cover, url(/image/rightside.svg) no-repeat cover;
+    }
+
+    .main__block {
+        width: 650px;
+        margin: 0 auto 40px auto;
+    }
+
+    .main__title {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 1.2;
+        text-align: center;
+        color: #504A62;
+    }
+
+    .iphone__image {
+        position: fixed;
+        bottom: 0;
+        width: 30%;
+    }
+}
+
+@media (max-width: 1050px) {
+    .header {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 100px auto 25px auto;
+    }
+
+    .header__leftside {
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+    }
+
+    .header__title {
+        color: black;
+        font-size: 60px;
+        font-weight: 700;
+        padding-left: 10px;
+    }
+
+    .header__rightside {
+        display: none;
+    }
+
+    .background__two {
+        background: none;
+    }
+
+    .main__block {
+        width: 280px;
+        margin: 0 auto 65px auto;
+    }
+
+    .main__title {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 1.2;
+        text-align: center;
+        color: #000;
+    }
+
+    .iphone__image {
+        position: fixed;
+        bottom: 0;
+        width: 50%;
+    }
+
+}
+
+@media (max-width: 550px) {
+
+    .iphone__image {
+        position: fixed;
+        bottom: 0;
+        width: 70%;
+        transition: all 1s;
+    }
+
 }

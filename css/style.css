@@ -64,6 +64,7 @@ body {
 .main__title {
     font-size: 40px;
     font-weight: 700;
+    line-height: 1.5;
     text-align: center;
     color: #504A62;
 }
@@ -74,5 +75,15 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 35gitpx;
+    gap: 35px;
+}
+
+.iphone {
+    width: 430px;
+}
+
+.iphone__image {
+    position: fixed;
+    bottom: 0;
+    left: 41%;
 }

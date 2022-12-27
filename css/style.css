@@ -12,23 +12,31 @@ body {
 }
 
 .header {
-    width: 50vw;
     display: flex;
     justify-content: space-between;
-    margin-left: 200px;
-    margin-top: 45px;
+    margin: 45px 200px 0 200px;
 }
 
-.header__logo {
-    width: 5%;
+.header__leftside, .header__rightside {
+    display: flex;
+    align-items: center;
 }
 
 .header__title {
     color: #504A62;
     font-size: 50px;
+    font-weight: 700;
     padding-left: 20px;
 }
 
-.header__nav {
-    width: 50vw;
+.nav__item {
+    font-size: 24px;
+    font-weight: 700;
+    color: #504A62;
+    text-decoration: none;
+}
+
+
+.nav__item:not(:first-child) {
+    padding-left: 24px;
 }
